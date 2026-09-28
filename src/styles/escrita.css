@@ -1,0 +1,51 @@
+
+#publicacoes {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.publicacao {
+  background: #ffffff;
+  border-left: 6px solid #9b59b6;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  font-family: Playfair, serif;
+  color: #4a025f;
+}
+
+.publicacao:hover {
+  transform: translateY(-3px);
+}
+
+.publicacao h3 {
+  color: #6a0dad;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.campo-titulo {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #bb8fce;
+  margin-bottom: 12px;
+  background: #fff5ff;
+  font-family: Playfair, serif;
+  color: #4a025f;
+}
+
+.campo-titulo:focus {
+  border-color: #9b59b6;
+  outline: none;
+}
+
+.titulo-secao {
+  text-align: center;
+  color: #6a0dad;
+  margin: 40px 0 10px;
+  font-family: Playfair, serif;
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(to right, #f3e7ff, #d6b3ff);
+  color: #4a025f;
+  padding: 20px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #6a0dad;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px #e3c3ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.cabecalho {
+  text-align: center;
+}
+
+.cabecalho h1 {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+
+button {
+  padding: 12px 24px;
+  background: #9b59b6;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Dancing Script', cursive;
+}
+
+button:hover {
+  background: #7d3c98;
+  transform: scale(1.05);
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 16px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #bb8fce;
+  margin-bottom: 20px;
+  background: #fff5ff;
+  resize: vertical;
+  font-family: Playfair, serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08) inset;
+  transition: border 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #9b59b6;
+  outline: none;
+}
+
+/* Página de entrada */
+.entrada {
+  text-align: center;
+  padding: 50px 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 7em;
+}
+
+.entrada p {
+  font-family: Playfair, serif;
+  font-size: 24px;
+  color: #5e3370;
+  margin: 30px 0;
+}
+
+.entrada button {
+  font-family: 'Dancing Script', cursive;
+  width: 240px;
+  font-size: 1.2rem;
+}
+
+/* Página não encontrada */
+.nao-encontrada {
+  text-align: center;
+  padding: 50px 30px;
+  max-width: 700px;
+  margin: 7em auto 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nao-encontrada p {
+  font-family: Playfair, serif;
+  font-size: 22px;
+  color: #5e3370;
+  margin: 20px 0;
+}
+
+/* Estado vazio (sem publicações / sem detalhes) */
+.estado-vazio {
+  text-align: center;
+  font-family: Playfair, serif;
+  font-size: 1.2rem;
+  color: #8a6da3;
+  margin-top: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .entrada,
+  .nao-encontrada {
+    padding: 30px 15px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
